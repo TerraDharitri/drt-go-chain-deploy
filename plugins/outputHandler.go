@@ -102,20 +102,17 @@ func NewOutputHandler(arg ArgOutputHandler) (*outputHandler, error) {
 func (oh *outputHandler) writeNodesSetup(
 	initialNodes []*sharding.InitialNode,
 ) error {
-	nodes := &sharding.NodesSetup{
-		StartTime:                   0,
-		RoundDuration:               oh.roundDuration,
-		ConsensusGroupSize:          uint32(oh.consensusGroupSize),
-		MinNodesPerShard:            uint32(oh.numOfNodesPerShard),
-		MetaChainConsensusGroupSize: uint32(oh.metachainConsensusGroupSize),
-		MetaChainMinNodes:           uint32(oh.numOfMetachainNodes),
-		Hysteresis:                  oh.hysteresisValue,
-		Adaptivity:                  oh.adaptivityValue,
-		InitialNodes:                initialNodes,
+	nodes := &sharding.NodesSetupDTO{
+		StartTime:     0,
+		RoundDuration: oh.roundDuration,
+		Hysteresis:    oh.hysteresisValue,
+		Adaptivity:    oh.adaptivityValue,
+		InitialNodes:  initialNodes,
 	}
 
 	return oh.nodesSetupHandler.WriteObjectInFile(nodes)
 }
+
 
 // writeGenesisFile will write the provided initial accounts to the genesis file
 func (oh *outputHandler) writeGenesisFile(initialAccounts []drtData.InitialAccount) error {

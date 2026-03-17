@@ -43,7 +43,7 @@ $ docker pull dharitri/drt-chain-filegen:tagname
 $ docker run -v /tmp/:/data/ dharitri/drt-chain-filegen:latest -stake-type direct -node-price 2500000000000000000000 -total-supply 20000000000000000000000000 -num-of-shards 3 ...
 ```
 This will create the files on the host machine running Docker at the path location `/tmp/`.
-Detailed information about the build is located under https://hub.docker.com/r/dharitri/drt-chain-filegen
+Detailed information about the build is located under https://hub.docker.com/r/terradharitri/drt-chain-filegen
  
 ## Running the tests
 ```

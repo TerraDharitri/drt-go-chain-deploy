@@ -130,7 +130,7 @@ VERSION:
 	delegationOwnerPublicKey = cli.StringFlag{
 		Name:  "delegation-owner-pk",
 		Usage: "defines the delegation owner public key, encoded in bech32 format",
-		Value: "drt1vxy22x0fj4zv6hktmydg8vpfh6euv02cz4yg0aaws6rrad5a5awqgqky80",
+		Value: "drt1vxy22x0fj4zv6hktmydg8vpfh6euv02cz4yg0aaws6rrad5a5awq4up8y3",
 	}
 	numDelegators = cli.UintFlag{
 		Name:  "num-delegators",
