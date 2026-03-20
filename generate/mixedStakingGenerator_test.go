@@ -26,7 +26,7 @@ func createMockMixedStakingGeneratorArguments() ArgMixedStakingGenerator {
 		RichestAccountMode:        false,
 		NumAdditionalWalletKeys:   0,
 		InitialRating:             50,
-		DelegationOwnerPkString:   "drt1vxy22x0fj4zv6hktmydg8vpfh6euv02cz4yg0aaws6rrad5a5awqgqky80",
+		DelegationOwnerPkString:   "drt1vxy22x0fj4zv6hktmydg8vpfh6euv02cz4yg0aaws6rrad5a5awq4up8y3",
 		DelegationOwnerNonce:      0,
 		VmType:                    "0500",
 		NumDelegators:             0,

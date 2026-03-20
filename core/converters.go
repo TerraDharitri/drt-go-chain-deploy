@@ -101,6 +101,8 @@ func generateBlockchainHook(converter drtCore.PubkeyConverter) (process.BlockCha
 		},
 		Counter:                  &testscommon.BlockChainHookCounterStub{},
 		MissingTrieNodesNotifier: &testscommon.MissingTrieNodesNotifierStub{},
+		EpochStartTrigger:        &testscommon.EpochStartTriggerStub{},
+		RoundHandler:             &testscommon.RoundHandlerMock{},
 	}
 
 	return hooks.NewBlockChainHookImpl(arg)

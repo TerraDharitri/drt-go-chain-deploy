@@ -39,12 +39,12 @@ func TestGenerateSCAddress_ShouldWork(t *testing.T) {
 
 	pkConv, _ := pubkeyConverter.NewBech32PubkeyConverter(32, "drt")
 	scAddress, err := GenerateSCAddress(
-		"drt1ulhw20j7jvgfgak5p05kv667k5k9f320sgef5ayxkt9784ql0zssrzyhjp",
+		"drt1ulhw20j7jvgfgak5p05kv667k5k9f320sgef5ayxkt9784ql0zss77n53l",
 		0,
 		"0500",
 		pkConv,
 	)
 
 	require.Nil(t, err)
-	assert.Equal(t, scAddress, "drt1qqqqqqqqqqqqqpgqvyvaeu6mnr9fq25kt0gyaymtn6zgjmp80zssuqmp6l")
+	assert.Equal(t, scAddress, "drt1qqqqqqqqqqqqqpgqvyvaeu6mnr9fq25kt0gyaymtn6zgjmp80zsspuvzep")
 }
